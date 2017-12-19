@@ -1,5 +1,5 @@
-from controllers import UserController
+from controllers import UsersController
 
 controllers = {
-    'user': UserController
+    'users': UsersController
 }

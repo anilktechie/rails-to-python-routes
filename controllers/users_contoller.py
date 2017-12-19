@@ -1,7 +1,7 @@
 from controllers.app_controller import AppController
 
 
-class UserController(AppController):
+class UsersController(AppController):
     COLLECTION = 'users'
 
     def __init__(self, id, data):
