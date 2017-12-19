@@ -1,2 +1,1 @@
 from controllers.user_contoller import UserController
-from controllers.auth_contoller import AuthController

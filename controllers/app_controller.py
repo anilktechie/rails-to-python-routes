@@ -1,6 +1,3 @@
-from config import serailize
-
-
 class AppController():
     def get(self):
         if self.id is None:
@@ -19,13 +16,3 @@ class AppController():
 
     def delete(self):
         return self.destroy()
-
-    def serailizer(self, data, set):
-        if type(data) is list:
-            return [self.filter_dict(dict, set) for dict in data]
-        else:
-            return self.filter_dict(data, set)
-
-    def filter_dict(self, dict, set):
-        allowed = serailize[self.COLLECTION][set]
-        return {k: v for (k, v) in dict.items() if k in allowed}
